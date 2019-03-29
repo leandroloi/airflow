@@ -89,7 +89,7 @@ try:
     import cPickle as pickle
 except ImportError:
     # Python 3
-    import pickle
+    import pickle  # type: ignore
 
 
 class OperatorSubclass(BaseOperator):
